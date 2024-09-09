@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bd4545;
+}
+
+.container {
+    background-color: #e5e7ed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(205, 193, 193, 0.1);
+    text-align: center;
+    
+}
+
+input[type="text"], select {
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Organiza los inputs en una columna */
+  }
+
+input {
+    margin-bottom: 10px; /* Añade espacio entre los inputs */
+  }
