@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC y Consumo de API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h1>Generador de RFC</h1>
+            <form id="rfcForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidoPaterno">Apellido Paterno:</label>
+                <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+
+                <label for="apellidoMaterno">Apellido Materno:</label>
+                <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+                <button type="submit" id="generarRfcBtn">Generar RFC</button>
+            </form>
+
+            <div class="resultado">
+                <h2>RFC Generado:</h2>
+                <p id="rfcResultado"></p>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <h1>Consultar Usuario API</h1>
+            <form id="userApiForm">
+                <button type="submit" id="consultarApiBtn">Consultar Usuario</button>
+            </form>
+
+            <div class="resultado">
+                <h2>Datos del Usuario:</h2>
+                <p id="userName"></p>
+                <p id="userEmail"></p>
+                <p id="userPhone"></p>
+                <p id="userWebsite"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
