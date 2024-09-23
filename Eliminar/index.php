@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <title>SPA Productos</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Registrar Producto</h1>
+    <form id="formProducto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="precio">Precio:</label>
+        <input type="number" step="0.01" id="precio" name="precio" required>
+        <br>
+        <label for="existencia">Existencia:</label>
+        <input type="number" id="existencia" name="existencia" required>
+        <br>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Lista de Productos</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="tablaProductos"></tbody>
+    </table>
+</body>
+</html>
